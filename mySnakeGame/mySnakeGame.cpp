@@ -19,7 +19,7 @@ POSITION POS;
 
 int main()
 {
-
+    
     POS.X = 10;
     POS.Y = 10;
     //POSITION MyP(10, 25);

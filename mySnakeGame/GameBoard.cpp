@@ -6,8 +6,8 @@ using namespace std;
 
 GameBoard::GameBoard()
 {
-	this->hight = 25;
-	this->widht = 50;
+	this->hight = 25;//x
+	this->widht = 50;//y
 }
  GameBoard::GameBoard(int h,int w)
 {
@@ -19,7 +19,7 @@ void GameBoard::startBoard(Snake* s)
     POSITION mySpos = s->get_pos();
     for (int i = 0; i < hight; i++)
     {
-        cout << "\t\t\t*";
+        cout << "\t\t\t*";  
         //cout << "#";
         for (int j = 0; j < widht; j++)
         {
