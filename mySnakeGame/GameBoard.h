@@ -13,7 +13,7 @@ public:
 	void set_wight(int w) { widht = w; }
 	int get_hight() { return hight; }
 	int get_wight() { return widht; }
-	void startBoard(Snake* mys);
+	void startBoard(Snake* mys,Food* myf);
 
 };
 

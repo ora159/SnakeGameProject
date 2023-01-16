@@ -2,6 +2,7 @@
 
 #include "GameBoard.h"
 #include"Snake.h"
+#include "food.h"
 //#include "Position.h"
 #include <iostream>
 //#define HEIGHT 25
@@ -14,17 +15,21 @@ using namespace std;
 //start the game -move the snake
 //add point and check what he eat.
 //add messege and when the game finish.
-GameBoard myBoard;
-POSITION POS;
 
 int main()
 {
+    GameBoard myBoard;
+    POSITION POS;
+    Food myf();
+    
     
     POS.X = 10;
     POS.Y = 10;
     //POSITION MyP(10, 25);
     Snake myS(POS,1);
-    myBoard.startBoard(&myS);
+    //food( )
+    myBoard.startBoard(&myS,$myf);
+    
     
 
 
