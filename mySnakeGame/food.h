@@ -9,7 +9,7 @@ class Food
 public:
 
 	Food (GameBoard my_g,Snake my_s);
-	POSITION getFoodP() { return this->FoodPos; };
+	POSITION getFoodP(){return this->FoodPos;}
 
 };
 
