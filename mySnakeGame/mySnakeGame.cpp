@@ -22,8 +22,8 @@ int main()
     myBoard.set_hight(25);
     myBoard.set_wight(50);
     Snake myS;
-    //Food_game myf(myBoard,myS);
-
+    Food_game myf(myBoard,myS);
+    POSITION p = myf.getFoodP();
     myBoard.startBoard(&myS);
     
     

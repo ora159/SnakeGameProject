@@ -4,8 +4,8 @@
 
 //constructor
 
-Food_game::Food_game(GameBoard my_g, Snake my_s){}
-/*{
+Food_game::Food_game(GameBoard my_g, Snake my_s)
+{
 	//rund a  position for the food
 	int myH = my_g.get_hight();//x
 	int myW = my_g.get_wight();//y
@@ -27,4 +27,4 @@ Food_game::Food_game(GameBoard my_g, Snake my_s){}
 	foodPos.Y = randomY;
 	this->FoodPos = foodPos;
 }
-*/
+
