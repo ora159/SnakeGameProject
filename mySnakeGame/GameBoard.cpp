@@ -1,5 +1,5 @@
 #include "GameBoard.h"
-#include "Food.h"
+#include "Food_game.h"
 #include <iostream>
 #include <conio.h>
 using namespace std;
@@ -15,20 +15,22 @@ GameBoard::GameBoard()
     this->hight = h;
     this->widht = w;
 }
-void GameBoard::startBoard(Snake* s,Food* f)
+void GameBoard::startBoard(Snake* s)
 {
+   int myH= this->hight ;
+   int myW = this->widht;
     POSITION mySpos = s->get_pos();
-    POSITION myStartFood = f->getFoodP();
+   // POSITION myStartFood = f->getFoodP();
    
-    for (int i = 0; i < hight; i++)
+    for (int i = 0; i<myH; i++)
     {
         cout << "\t\t\t*";  
         //cout << "#";
-        for (int j = 0; j < widht; j++)
+        for (int j = 0;j<myW; j++)
         {
-            if (i == 0 || i == hight - 1) cout << '*';
+            if (i == 0 || i == (myH-1)) cout << '*';
             else if ((i == mySpos.Y) && (j + 1 == mySpos.X)) cout << '0';
-            else if (i == myStartFood.Y && j + 1 == myStartFood.X) cout << '$';
+            //else if (i == myStartFood.Y && j + 1 == myStartFood.X) cout << '$';
             else {
                 cout << ' ';
             }

@@ -3,14 +3,13 @@
 #include "Snake.h"
 #include "GameBoard.h"
 
-class Food
+class Food_game
 {
 	POSITION FoodPos;
 public:
 
-	Food (GameBoard my_g,Snake my_s);
-	POSITION getFoodP(){return this->FoodPos;}
+	Food_game(GameBoard my_g, Snake my_s);
+	POSITION getFoodP() { return this->FoodPos; }
 
 };
-
 

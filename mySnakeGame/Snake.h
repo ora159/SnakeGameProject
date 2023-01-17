@@ -7,8 +7,6 @@
 #include <list>
 #include <vector>
 
-#define WIDTH 50
-#define HEIGHT 25
 using namespace std;
 
 enum DIS {UP,DOWN,RIGHT,LEFT};
@@ -24,6 +22,7 @@ class Snake
 	
 public:
     //constructor
+    Snake();
     Snake(POSITION pos, int sp);
     POSITION get_pos();
     vector<POSITION> get_body();

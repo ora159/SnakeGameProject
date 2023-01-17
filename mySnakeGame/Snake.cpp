@@ -6,6 +6,16 @@ bool collided();
 */
 
 //constructore-bouild the snake body
+Snake::Snake()
+{
+	pos.X= 15;
+	pos.Y = 15;
+	this->speed = 10;
+	this->len = 1;
+	this->speed = 0;
+	this->dir = UP;
+	Sbody.push_back(pos);
+}
 Snake::Snake(POSITION po, int sp)
 {
 	this->pos = po;

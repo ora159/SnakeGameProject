@@ -2,10 +2,10 @@
 
 #include "GameBoard.h"
 #include"Snake.h"
-#include "food.h"
+#include "Food_game.h"
 //#include "Position.h"
 #include <iostream>
-//#define HEIGHT 25
+//#define HEIGHT 30
 //#define WIDTH 50
 using namespace std;
 
@@ -19,16 +19,12 @@ using namespace std;
 int main()
 {
     GameBoard myBoard;
-    POSITION POS;
-    Food myf();
-    
-    
-    POS.X = 10;
-    POS.Y = 10;
-    //POSITION MyP(10, 25);
-    Snake myS(POS,1);
-    //food( )
-    myBoard.startBoard(&myS,$myf);
+    myBoard.set_hight(25);
+    myBoard.set_wight(50);
+    Snake myS;
+    //Food_game myf(myBoard,myS);
+
+    myBoard.startBoard(&myS);
     
     
 
