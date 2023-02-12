@@ -1,10 +1,5 @@
 #include "Snake.h"
 
-/*
-bool collided();
-
-*/
-
 //constructore-bouild the snake body
 Snake::Snake()
 {

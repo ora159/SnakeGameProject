@@ -15,7 +15,6 @@ class Snake
 	//COORD pos;
     POSITION pos;//SNAKE POSITION
 	vector<POSITION> Sbody;
-	//vector<COORD> Sbody;
     int speed;//how much steps we move in the keyboard
     int len;//the lenght of the snake.
     DIS dir;//where you go?
